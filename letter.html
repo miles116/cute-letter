@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>letter sayo Boss</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #ffb3d9, #ffdde1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .card {
+        background: white;
+        width: 90%;
+        max-width: 450px;
+        padding: 30px;
+        border-radius: 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        text-align: center;
+        animation: pop 0.6s ease;
+        position: relative;
+    }
+
+    @keyframes pop {
+        0% { transform: scale(0.7); opacity: 0;}
+        100% { transform: scale(1); opacity: 1;}
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #ff4da6;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #444;
+        margin-top: 0;
+    }
+
+    .cute-heart {
+        font-size: 60px;
+        animation: heartbeat 1.2s infinite ease-in-out;
+    }
+
+    @keyframes heartbeat {
+        0% { transform: scale(1); }
+        30% { transform: scale(1.25); }
+        50% { transform: scale(1); }
+        70% { transform: scale(1.25); }
+        100% { transform: scale(1); }
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #777;
+    }
+
+    /* floating hearts */
+    .float-heart {
+        position: absolute;
+        color: #ff4da6;
+        animation: floatUp 6s linear infinite;
+        opacity: 0.7;
+        font-size: 20px;
+    }
+
+    @keyframes floatUp {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(-250px); opacity: 0; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="cute-heart">💗</div>
+    <h1>Hi, Agelina ✨</h1>
+    <p>
+        I made this little page just for you.<br><br>
+        I just wanted to say that…<br>
+        Pag need mo ng kausap nandito lang naman ako pero mag ready ka ng chismis haahahaha<br><br>
+        <!-- <strong>you make everything feel a little brighter.</strong> 🌸<br><br> -->
+        <!-- Hope this made you smile even a tiny bit 💕 -->
+    </p>
+
+    <div class="footer">— from Rogel 💫</div>
+</div>
+
+<!-- floating hearts -->
+<span class="float-heart" style="left:10%; animation-delay:0s;">💖</span>
+<span class="float-heart" style="left:30%; animation-delay:1s;">💕</span>
+<span class="float-heart" style="left:50%; animation-delay:2s;">💞</span>
+<span class="float-heart" style="left:70%; animation-delay:0.5s;">💘</span>
+<span class="float-heart" style="left:85%; animation-delay:1.5s;">💝</span>
+
+</body>
+</html>
